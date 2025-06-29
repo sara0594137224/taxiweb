@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #430cda00;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Barre latérale */
+  .sidebar {
+    width: 220px;
+    background-color: #f7a600;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .sidebar .logo {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    flex: 1;
+  }
+  
+  .sidebar li {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+  
+  .logout {
+    background-color: #4ff010;
+    color: green;
+    border: none;
+    padding: 10px;
+    margin-top: auto;
+    cursor: pointer;
+  }
+  
+  /* Contenu principal */
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .indicators {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .indicator {
+    flex: 1;
+    color: rgb(172, 13, 13);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .indicator.blue { background-color: #dd1390; }
+  .indicator.green { background-color: #28a745; }
+  .indicator.yellow { background-color: #ffc107; color: black; }
+  .indicator.red { background-color: #dc3545; }
+  
+  .content h3 {
+    margin: 20px 0 10px;
+  }
+  
+  .chart-placeholder {
+    height: 150px;
+    background-color: white;
+    border: 1px dashed #ccc;
+    margin-bottom: 20px;
+  }
+  
